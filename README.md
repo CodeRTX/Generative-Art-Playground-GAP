@@ -15,8 +15,8 @@ An interactive, seed‑based art generator built with vanilla HTML, CSS, and Jav
 2. Adjust controls and click **Draw** or enable **Animate**.
 3. Save PNG or revisit recent renders in the gallery.
 
-<!-- ## Live Demo
-[GitHub Pages Link](#) -->
+## Live Demo
+[GitHub Pages Link](https://codertx.github.io/Generative-Art-Playground-GAP/)
 
 ## Screenshots
 [working-demo](https://github.com/CodeRTX/Generative-Art-Playground-GAP-/blob/main/snapshot.JPG)

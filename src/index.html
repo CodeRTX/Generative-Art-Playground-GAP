@@ -1,1 +1,99 @@
-abc1...
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Generative Art Playground</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>Generative Art Playground</h1>
+    <p class="tagline">Zero frameworks.</p>
+  </header>
+
+  <main class="app">
+    <section class="controls">
+      <div class="control-row">
+        <label for="pattern"><span>Pattern</span></label>
+        <select id="pattern">
+          <option value="orbits">Orbits</option>
+          <option value="flowfield">Flow Field</option>
+          <option value="tiles">Tessellated Tiles</option>
+        </select>
+      </div>
+
+      <div class="control-row">
+        <label for="seed"><span>Seed</span></label>
+        <input id="seed" type="text" placeholder="e.g., 12345 or any text" />
+        <button id="randomize" type="button">Randomize</button>
+      </div>
+
+      <div class="control-row">
+        <label for="symmetry"><span>Symmetry</span></label>
+        <input id="symmetry" type="range" min="1" max="16" step="1" value="6" />
+        <output id="symmetryOut">6</output>
+      </div>
+
+      <div class="control-row">
+        <label for="particles"><span>Particles</span></label>
+        <input id="particles" type="range" min="50" max="4000" step="50" value="800" />
+        <output id="particlesOut">800</output>
+      </div>
+
+      <div class="control-row">
+        <label for="speed"><span>Speed</span></label>
+        <input id="speed" type="range" min="0.1" max="5" step="0.1" value="1.6" />
+        <output id="speedOut">1.6</output>
+      </div>
+
+      <div class="control-row">
+        <label for="linewidth"><span>Line width</span></label>
+        <input id="linewidth" type="range" min="0.3" max="6" step="0.1" value="1.2" />
+        <output id="linewidthOut">1.2</output>
+      </div>
+
+      <div class="control-row">
+        <label for="palette"><span>Palette</span></label>
+        <select id="palette">
+          <option value="mono">Monochrome</option>
+          <option value="neon">Neon Night</option>
+          <option value="sunset">Sunset</option>
+          <option value="ocean">Ocean</option>
+          <option value="forest">Forest</option>
+          <option value="pastel">Pastel</option>
+        </select>
+      </div>
+
+      <div class="control-row">
+        <label class="checkbox">
+          <input id="animate" type="checkbox" checked />
+          <span>Animate</span>
+        </label>
+      </div>
+
+      <div class="buttons">
+        <button id="draw" type="button">Draw</button>
+        <button id="clear" type="button">Clear</button>
+        <button id="save" type="button">Save PNG</button>
+        <button id="reset" type="button">Reset Defaults</button>
+      </div>
+    </section>
+
+    <section class="canvas-wrap">
+      <canvas id="art" aria-label="Generative art canvas"></canvas>
+    </section>
+
+    <aside class="gallery">
+      <h2>Recent Renders</h2>
+      <div id="thumbs" class="thumbs" role="list"></div>
+    </aside>
+  </main>
+
+  <footer class="app-footer">
+    <p>Built with HTML, CSS, and JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -22,4 +22,4 @@ An interactive, seed‑based art generator built with vanilla HTML, CSS, and Jav
 [working-demo](https://github.com/CodeRTX/Generative-Art-Playground-GAP-/blob/main/snapshot.JPG)
 
 ## License
-Apache 2.0
+Apache License 2.0
